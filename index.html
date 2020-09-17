@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Thanh Tung Phan</title>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+   
+    <div>
+        <h1>Typing Speed Test</h1>
+    </div>
+    <div class="container my-text">
+        <p>
+            <span>
+                <h3 id="speed">Speed: 0 wpm</h3>
+            </span>
+            <span>
+                <h3 id="errors">Errors: 0</h3>
+            </span>
+        </p>
+    </div>
+    <div class="container inactive" id="display">
+    </div>
+    <div class="container active" id="activation">
+        click on the text to start typing
+    </div>
+    
+    <div class="keyboard">
+        <div class="keyboard__row">
+            <div class="key--double" data-key="192">
+            <div>~</div>
+            <div>`</div>
+            </div>
+            <div class="key--double" data-key="49">
+            <div>!</div>
+            <div>1</div>
+            </div>
+            <div class="key--double" data-key="50">
+            <div>@</div>
+            <div>2</div>
+            </div>
+            <div class="key--double" data-key="51">
+            <div>#</div>
+            <div>3</div>
+            </div>
+            <div class="key--double" data-key="52">
+            <div>$</div>
+            <div>4</div>
+            </div>
+            <div class="key--double" data-key="53">
+            <div>%</div>
+            <div>5</div>
+            </div>
+            <div class="key--double" data-key="54">
+            <div>^</div>
+            <div>6</div>
+            </div>
+            <div class="key--double" data-key="55">
+            <div>&</div>
+            <div>7</div>
+            </div>
+            <div class="key--double" data-key="56">
+            <div>*</div>
+            <div>8</div>
+            </div>
+            <div class="key--double" data-key="57">
+            <div>(</div>
+            <div>9</div>
+            </div>
+            <div class="key--double" data-key="48">
+            <div>)</div>
+            <div>0</div>
+            </div>
+            <div class="key--double" data-key="189">
+            <div>_</div>
+            <div>-</div>
+            </div>
+            <div class="key--double" data-key="187">
+            <div>+</div>
+            <div>=</div>
+            </div>
+            <div class="key--bottom-right key--word key--w4" data-key="8">
+            <span>delete</span>
+            </div>
+        </div>
+        <div class="keyboard__row">
+            <div class="key--bottom-left key--word key--w4" data-key="9">
+            <span>tab</span>
+            </div>
+            <div class="key--letter" data-char="Q" data-key="113">Q</div>
+            <div class="key--letter" data-char="W" data-key="119">W</div>
+            <div class="key--letter" data-char="E" data-key="101">E</div>
+            <div class="key--letter" data-char="R" data-key="114">R</div>
+            <div class="key--letter" data-char="T" data-key="116">T</div>
+            <div class="key--letter" data-char="Y" data-key="121">Y</div>
+            <div class="key--letter" data-char="U" data-key="117">U</div>
+            <div class="key--letter" data-char="I" data-key="105">I</div>
+            <div class="key--letter" data-char="O" data-key="111">O</div>
+            <div class="key--letter" data-char="P" data-key="112">P</div>
+            <div class="key--double" data-key="219" data-char="{[">
+            <div>{</div>
+            <div>[</div>
+            </div>
+            <div class="key--double" data-key="221" data-char="}]">
+            <div>}</div>
+            <div>]</div>
+            </div>
+            <div class="key--double" data-key="220" data-char="|\">
+            <div>|</div>
+            <div>\</div>
+            </div>
+        </div>
+        <div class="keyboard__row">
+            <div class="key--bottom-left key--word key--w5" data-key="20">
+            <span>caps lock</span>
+            </div>
+            <div class="key--letter" data-char="A">A</div>
+            <div class="key--letter" data-char="S">S</div>
+            <div class="key--letter" data-char="D">D</div>
+            <div class="key--letter" data-char="F">F</div>
+            <div class="key--letter" data-char="G">G</div>
+            <div class="key--letter" data-char="H">H</div>
+            <div class="key--letter" data-char="J">J</div>
+            <div class="key--letter" data-char="K">K</div>
+            <div class="key--letter" data-char="L">L</div>
+            <div class="key--double" data-key="186">
+            <div>:</div>
+            <div>;</div>
+            </div>
+            <div class="key--double" data-key="222">
+            <div>"</div>
+            <div>'</div>
+            </div>
+            <div class="key--bottom-right key--word key--w5" data-key="13">
+            <span>return</span>
+            </div>
+        </div>
+        <div class="keyboard__row">
+            <div class="key--bottom-left key--word key--w6" data-key="16">
+            <span>shift</span>
+            </div>
+            <div class="key--letter" data-char="Z">Z</div>
+            <div class="key--letter" data-char="X">X</div>
+            <div class="key--letter" data-char="C">C</div>
+            <div class="key--letter" data-char="V">V</div>
+            <div class="key--letter" data-char="B">B</div>
+            <div class="key--letter" data-char="N">N</div>
+            <div class="key--letter" data-char="M">M</div>
+            <div class="key--double" data-key="188">
+            <div>&lt;</div>
+            <div>,</div>
+            </div>
+            <div class="key--double" data-key="190">
+            <div>&gt;</div>
+            <div>.</div>
+            </div>
+            <div class="key--double" data-key="191">
+            <div>?</div>
+            <div>/</div>
+            </div>
+            <div class="key--bottom-right key--word key--w6" data-key="16-R">
+            <span>shift</span>
+            </div>
+        </div>
+        <div class="keyboard__row keyboard__row--h3">
+            <div class="key--bottom-left key--word">
+            <span>fn</span>
+            </div>
+            <div class="key--bottom-left key--word key--w1" data-key="17">
+            <span>control</span>
+            </div>
+            <div class="key--bottom-left key--word key--w1" data-key="18">
+            <span>option</span>
+            </div>
+            <div class="key--bottom-right key--word key--w3" data-key="91">
+            <span>command</span>
+            </div>
+            <div class="key--double key--right key--space" data-key="32" data-char=" ">
+            &nbsp;
+            </div>
+            <div class="key--bottom-left key--word key--w3" data-key="93-R">
+            <span>command</span>
+            </div>
+            <div class="key--bottom-left key--word key--w1" data-key="18-R">
+            <span>option</span>
+            </div>
+            <div data-key="37" class="key--arrow">
+            <span>&#9664;</span>
+            </div>
+            <div class="key--double key--arrow--tall" data-key="38">
+            <div>&#9650;</div>
+            <div>&#9660;</div>
+            </div>
+            <div data-key="39" class="key--arrow">
+            <span>&#9654;</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <script src="keyboard.js"></script>
+    </body>
+</html>
