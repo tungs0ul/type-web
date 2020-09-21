@@ -128,10 +128,6 @@ function finish(){
     errorIndex = -1;
     currentWordCount = 0;
     newText();
-    $("#display").removeClass("active");
-    $("#display").addClass("inactive");
-    $("#activation").addClass("active");
-    $("#activation").removeClass("inactive");
 }
 
 function newText(){
