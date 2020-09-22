@@ -104,19 +104,17 @@ function start(){
             document.getElementById("display").appendChild(characterSpan);
         });
         $('#span-'+(index+1)).addClass("blink");
-        $("#activation").addClass("inactive");
-        $("#activation").removeClass("active");
+        $("#activation").hide();
     }
 }
-
+start()
 $("#display").click(start)
 
 $("body > *").not("body > #display").click(function (){
     $("#display").removeClass("active");
     $("#display").addClass("inactive");
     $('#span-'+ (index + 1)).removeClass("blink");
-    $("#activation").addClass("active");
-    $("#activation").removeClass("inactive");
+    $("#activation").show();
     reset();
 });
 
